@@ -34,13 +34,9 @@ db.user.hasMany(db.blog, {
   onDelete: 'CASCADE',
 });
 
-
 // to make any change to the db schema make it true and default let it be false
 db.sequelize.sync({ force: false }).then(() => {
   console.log('re-sync done');
 });
-
-
-
 
 module.exports = db;

@@ -20,7 +20,7 @@
 <body>
     <%- include('./components/navbar') %>
 
-        <% if(message||error){ %>
+        <% if((message||error)){ %>
             <div class="alert alert-success" id="error-msg">
                 <%- message|| error %>
             </div>

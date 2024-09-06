@@ -11,13 +11,17 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     description: {
-      type: DataTypes.TEXT,    // string le certian portion pachi faldincha(less bit store gar cha ) so text use gareko 
+      type: DataTypes.TEXT, // string le certian portion pachi faldincha(less bit store gar cha ) so text use gareko
       allowNull: false,
     },
     image: {
       type: DataTypes.TEXT,
-      allowNull: false
-    }
+      allowNull: false,
+    },
+    views: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
   });
   return Blog;
 };
